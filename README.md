@@ -12,7 +12,7 @@ O aplicativo foi desenvolvido utilizando HTML, CSS e JavaScript.
 ## Tecnologias utilizadas no projeto
 * HTML
 * CSS
-*JAVA-SCRIPT
+* JAVA-SCRIPT
 
 ## Screenshots
 ![Screenshot da tela inicial do AluraPlay](https://imgur.com/aymxEsh.png)
