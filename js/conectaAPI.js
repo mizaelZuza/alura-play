@@ -4,4 +4,23 @@ async function listarVideos() {
     return conexaoConvertida;
 }
 
-export const conectaApi = {listarVideos};
+async function criarVideo(titulo, descricao, url, imagem) {
+    const conexao = await fetch("http://localhost:3000/videos", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            titulo: titulo,
+            descricao: `${descricao} mil visualizações`,
+            url: url,
+            imagem: imagem
+
+        })
+    });
+    const conexaoConvertida = await conexao.json();
+    return conexaoConvertida;
+}
+
+export {listarVideos, criarVideo};
+
